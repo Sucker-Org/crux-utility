@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNEXT",
+    "moduleResolution": "Node",
+    "declaration": true,
+    "outDir": "dist",
+    "lib": ["ESNEXT", "DOM", "DOM.Iterable"]
+  },
+  "include": ["source"],
+  "typedocOptions": {
+    "name": "Web utils",
+    "excludeExternals": true,
+    "excludePrivate": true,
+    "readme": "./ReadMe.md",
+    "out": "docs/"
+  }
+}
