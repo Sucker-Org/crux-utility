@@ -1,6 +1,6 @@
 {
   "name": "crux-utility",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "web tools with typescript",
   "main": "./dist/index.js",
   "scripts": {
