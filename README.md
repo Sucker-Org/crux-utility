@@ -1,5 +1,5 @@
 # crux-utility
-![npm version](https://badge.fury.io/js/crux-utility.svg)
+[![npm version](https://badge.fury.io/js/crux-utility.svg)](https://badge.fury.io/js/crux-utility)
 
 ![npm](https://img.shields.io/npm/dw/crux-utility)
 
