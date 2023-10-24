@@ -5,7 +5,6 @@
   "main": "./dist/index.js",
   "scripts": {
     "build": "rm -rf dist/ docs/  &&  tsc",
-    "test": "ts-mocha tests/**/test.ts",
     "typedoc": "npx typedoc --tsconfig typedoc.json"
   },
   "repository": {
