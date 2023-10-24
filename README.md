@@ -1,4 +1,3 @@
-# curx-utility
 # crux-utility
 ![npm version](https://badge.fury.io/js/crux-utility.svg)
 
