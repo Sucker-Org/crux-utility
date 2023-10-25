@@ -1,18 +1,18 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "ESNEXT",
+    "target": "ES2015",
+    "module": "commonjs",
     "moduleResolution": "Node",
+    "esModuleInterop": true,
     "declaration": true,
-    "outDir": "dist",
-    "lib": ["ESNEXT", "DOM", "DOM.Iterable"]
+    "declarationDir": "./dist/types",
+    "outDir": "./dist/cjs",
+    "lib": ["ES2015", "DOM", "DOM.Iterable"]
   },
-  "include": ["source"],
+  "include": ["src"],
   "typedocOptions": {
-    "name": "Web utils",
-    "excludeExternals": true,
-    "excludePrivate": true,
     "readme": "./ReadMe.md",
-    "out": "docs/"
+    "entryPoints": ["src/index.ts"],
+    "out": "docs"
   }
 }
