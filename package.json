@@ -1,6 +1,6 @@
 {
   "name": "crux-utility",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "web tools with typescript",
   "scripts": {
     "build": "rm -rf dist/  &&  tsc -p tsconfig.json  &&  tsc -p tsconfig-esm.json",
@@ -29,6 +29,7 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
+    "axios": "^1.5.1",
     "typedoc": "^0.25.2"
   }
 }
