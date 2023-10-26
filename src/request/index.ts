@@ -1,24 +1,10 @@
-import axios, { AxiosInstance, AxiosResponse, InternalAxiosRequestConfig, AxiosRequestConfig } from "axios";
+import axios, { AxiosInstance, AxiosResponse, InternalAxiosRequestConfig } from "axios";
+import { RequestConfig, RequestInterceptors } from "./types";
 
-export type RequestInterceptors = {
-
-    requestInterceptors?: (config: InternalAxiosRequestConfig) => InternalAxiosRequestConfig
-    requestInterceptorsCatch?: (err: any) => any
-
-    responseInterceptors?: <T = AxiosResponse>(config: T) => T
-    responseInterceptorsCatch?: (err: any) => any
-}
-/* export interface RequestConfig extends InternalAxiosRequestConfig {
-  interceptors?: RequestInterceptors
-} */
-export interface RequestConfig extends AxiosRequestConfig {
-    interceptors?: RequestInterceptors
-}
-
-export default class Request {
+export class Request {
     instance: AxiosInstance
     interceptors?: RequestInterceptors
-
+    
     constructor(config: RequestConfig) {
 
         this.instance = axios.create(config)
@@ -50,9 +36,6 @@ export default class Request {
 
     request<T = any>(config: RequestConfig): Promise<T> {
         return new Promise((resolve, reject) => {
-            /*  if (config.interceptors?.requestInterceptors) {
-                 config = config.interceptors.requestInterceptors(config);
-             } */
             this.instance
                 .request<any, T>(config)
                 .then(res => {
