@@ -1,1 +1,5 @@
 docs
+tests
+.github
+.dist
+.mochawesome-report

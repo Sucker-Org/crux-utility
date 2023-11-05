@@ -18,3 +18,7 @@ or
 ```bash
 yarn add crux-utility
 ```
+
+## Document
+
+[![Alt text](2E5AA69C.png)Click here to see all methods](https://sucker-org.github.io/crux-utility)

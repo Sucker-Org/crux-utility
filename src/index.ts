@@ -5,3 +5,5 @@ export * from "./storage";
 export * from "./request";
 export * from "./currencyFormat";
 export * from "./dateFormats";
+export * from "./cookie";
+export * from "./Validator";
