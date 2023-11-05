@@ -1,5 +1,5 @@
 docs
-tests
+tasks
 .github
 .dist
-.mochawesome-report
+mochawesome-report
