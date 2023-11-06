@@ -3,7 +3,7 @@
   "version": "1.1.2",
   "description": "web tools with typescript",
   "scripts": {
-    "build": "rm -rf dist/  &&  typedoc  &&  tsc -p tsconfig.json  &&  tsc -p tsconfig-esm.json",
+    "build": "rm -rf dist/  &&  tsc -p tsconfig.json  &&  tsc -p tsconfig-esm.json",
     "typedoc": "npx typedoc",
     "test": "mocha ./tasks/*.test.ts --require ts-node/register"
   },
